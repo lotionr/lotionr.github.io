@@ -349,13 +349,13 @@ section {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
 @media (max-width: 480px) {
-  .skills-grid { grid-template-columns: 1fr 1fr; }
+  .skills-grid { grid-template-columns: 1fr; }
 }
 
 .skill-col h4 {
@@ -534,6 +534,29 @@ section {
   margin-bottom: 1rem;
 }
 
+.tc-bullets {
+  list-style: none;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.tc-bullets li {
+  font-size: 0.875rem;
+  color: var(--text);
+  line-height: 1.7;
+  padding-left: 1.1rem;
+  position: relative;
+}
+.tc-bullets li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 0.7rem;
+  top: 0.35em;
+}
+
 .tc-badge {
   font-family: var(--font-mono);
   font-size: 0.65rem;
@@ -636,11 +659,41 @@ section {
 }
 .project-card:hover .pc-title { color: var(--gold); }
 
+.pc-date-small {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  margin-bottom: 0.75rem;
+}
+
 .pc-desc {
   font-size: 0.875rem;
   color: var(--text-dim);
   line-height: 1.7;
   margin-bottom: 1.5rem;
+}
+
+.pc-bullets {
+  list-style: none;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+.pc-bullets li {
+  font-size: 0.825rem;
+  color: var(--text-dim);
+  line-height: 1.7;
+  padding-left: 1.1rem;
+  position: relative;
+}
+.pc-bullets li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 0.65rem;
+  top: 0.38em;
 }
 
 .pc-tags {
