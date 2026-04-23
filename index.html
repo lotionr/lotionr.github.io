@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lochan Reddy</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">LR</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, my name is</p>
+      <h1 class="hero-name">Lochan Reddy.</h1>
+      <h2 class="hero-tagline">I build intelligent systems.</h2>
+      <p class="hero-sub">
+        CS + Data Science student at <span class="gold">UC Berkeley</span> (May 2028),
+        passionate about machine learning, software engineering, and turning data into impact.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm Lochan, a second-year student at UC Berkeley studying Computer Science and
+            Data Science. I'm drawn to the intersection of machine learning and software
+            engineering — building systems that are not just functional, but genuinely smart.
+          </p>
+          <p>
+            Whether it's designing ML pipelines, engineering full-stack products, or
+            researching novel AI applications, I love work that pushes at the edges of
+            what's currently possible.
+          </p>
+          <p>
+            Outside of academics, I spend time exploring new research papers, working on
+            side projects, and contributing to a growing understanding of how AI will reshape
+            the way we interact with technology.
+          </p>
+          <div class="skills-grid">
+            <div class="skill-col">
+              <h4>Languages</h4>
+              <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>JavaScript / TypeScript</li>
+                <li>SQL</li>
+                <li>C / C++</li>
+              </ul>
+            </div>
+            <div class="skill-col">
+              <h4>ML / Data</h4>
+              <ul>
+                <li>PyTorch / TensorFlow</li>
+                <li>scikit-learn</li>
+                <li>pandas / NumPy</li>
+                <li>Hugging Face</li>
+                <li>LangChain</li>
+              </ul>
+            </div>
+            <div class="skill-col">
+              <h4>Engineering</h4>
+              <ul>
+                <li>React / Next.js</li>
+                <li>Node.js</li>
+                <li>AWS</li>
+                <li>Docker</li>
+                <li>Git</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="about-card-inner">
+            <div class="card-badge">
+              <span class="badge-label">Currently studying at</span>
+              <span class="badge-school gold">UC Berkeley</span>
+            </div>
+            <div class="card-stat">
+              <span class="stat-num">2028</span>
+              <span class="stat-label">Expected Graduation</span>
+            </div>
+            <div class="card-stat">
+              <span class="stat-num">CS + DS</span>
+              <span class="stat-label">Double Major</span>
+            </div>
+            <div class="card-stat">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">Projects Shipped</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">02.</span> Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item" data-index="0">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role">Software Development Engineer Intern</h3>
+                <p class="tc-company">Amazon</p>
+              </div>
+              <span class="tc-badge incoming">Incoming</span>
+            </div>
+            <p class="tc-date">Summer 2025</p>
+            <p class="tc-desc">
+              Incoming SDE intern at Amazon. Will be working on large-scale distributed
+              systems and engineering problems across Amazon's infrastructure.
+            </p>
+            <div class="tc-tags">
+              <span>AWS</span>
+              <span>Distributed Systems</span>
+              <span>Java</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-index="1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role">ML Research</h3>
+                <p class="tc-company">Outsampler</p>
+              </div>
+            </div>
+            <p class="tc-date">2024 – Present</p>
+            <p class="tc-desc">
+              Conducting machine learning research focused on developing novel model
+              architectures and improving performance on real-world data tasks. Collaborating
+              with a cross-functional team to move research prototypes toward production.
+            </p>
+            <div class="tc-tags">
+              <span>PyTorch</span>
+              <span>Research</span>
+              <span>Python</span>
+              <span>LLMs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-index="2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role">ML Engineer</h3>
+                <p class="tc-company">Movicorn</p>
+              </div>
+            </div>
+            <p class="tc-date">2023 – 2024</p>
+            <p class="tc-desc">
+              Engineered machine learning features and data pipelines for Movicorn's
+              platform. Built and deployed models that improved recommendation quality
+              and user engagement metrics.
+            </p>
+            <div class="tc-tags">
+              <span>Machine Learning</span>
+              <span>Data Pipelines</span>
+              <span>Python</span>
+              <span>scikit-learn</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">03.</span> Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card" data-index="0">
+          <div class="pc-top">
+            <div class="pc-icons">
+              <svg class="pc-folder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              <a href="https://github.com/lotionr" target="_blank" rel="noopener" aria-label="GitHub" class="pc-link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+            <h3 class="pc-title">IntentGate</h3>
+            <p class="pc-desc">
+              An intelligent API gateway that classifies user intent and routes requests
+              to the appropriate backend service using NLP. Reduces latency and improves
+              request handling by predicting intent before execution.
+            </p>
+          </div>
+          <div class="pc-tags">
+            <span>Python</span>
+            <span>NLP</span>
+            <span>API Gateway</span>
+            <span>FastAPI</span>
+          </div>
+        </div>
+
+        <div class="project-card featured" data-index="1">
+          <div class="pc-top">
+            <div class="pc-icons">
+              <svg class="pc-folder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              <a href="https://github.com/lotionr" target="_blank" rel="noopener" aria-label="GitHub" class="pc-link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+            <h3 class="pc-title">Dark Pattern Detector</h3>
+            <p class="pc-desc">
+              A browser extension + ML model that identifies and flags deceptive UI patterns
+              (dark patterns) on websites in real time. Uses a fine-tuned classifier trained
+              on annotated e-commerce screenshots to protect users from manipulative design.
+            </p>
+          </div>
+          <div class="pc-tags">
+            <span>PyTorch</span>
+            <span>Computer Vision</span>
+            <span>Chrome Extension</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card featured" data-index="2">
+          <div class="pc-top">
+            <div class="pc-icons">
+              <svg class="pc-folder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              <a href="https://github.com/lotionr" target="_blank" rel="noopener" aria-label="GitHub" class="pc-link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+            <h3 class="pc-title">Financial Planning AI</h3>
+            <p class="pc-desc">
+              An AI-powered personal finance assistant that analyzes spending patterns,
+              projects future savings, and generates personalized budget recommendations.
+              Uses LLM-based reasoning to answer natural-language financial queries
+              against user data.
+            </p>
+          </div>
+          <div class="pc-tags">
+            <span>LangChain</span>
+            <span>OpenAI</span>
+            <span>React</span>
+            <span>Python</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-index="3">
+          <div class="pc-top">
+            <div class="pc-icons">
+              <svg class="pc-folder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              <a href="https://github.com/lotionr" target="_blank" rel="noopener" aria-label="GitHub" class="pc-link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+            <h3 class="pc-title">Rotten to Riches</h3>
+            <p class="pc-desc">
+              A movie recommendation engine that combines Rotten Tomatoes critic scores with
+              user taste profiles to surface films that are critically underrated but
+              personally perfect. Trained on collaborative filtering with content-based
+              feature augmentation.
+            </p>
+          </div>
+          <div class="pc-tags">
+            <span>Recommender Systems</span>
+            <span>scikit-learn</span>
+            <span>Flask</span>
+            <span>pandas</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container contact-inner">
+      <h2 class="section-title"><span class="section-num">04.</span> Get In Touch</h2>
+      <p class="contact-lead">
+        Whether you have a question, an opportunity, or just want to talk tech —
+        my inbox is always open.
+      </p>
+      <a href="mailto:lochanreddy@berkeley.edu" class="btn btn-primary btn-lg">
+        Say Hello
+      </a>
+      <div class="social-links">
+        <a href="https://github.com/lotionr" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/lochannreddy" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:lochanreddy@berkeley.edu" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed &amp; built by Lochan Reddy</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
