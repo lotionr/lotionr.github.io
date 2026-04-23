@@ -308,10 +308,11 @@
               </a>
             </div>
             <h3 class="pc-title">Dark Pattern Auditor</h3>
-            <p class="pc-date-small">dark-pattern-auditor</p>
+            <p class="pc-date-small">Apr 2026 &mdash; Perplexity Hackathon</p>
             <ul class="pc-bullets">
-              <li>Legal audit tool that crawls signup, cancellation, and cookie flows with Playwright; classifies 7 dark pattern types against live FTC and EU statute text using Perplexity sonar-reasoning-pro, surfacing real enforcement case precedents per finding.</li>
-              <li>Next.js frontend streams live audit progress via SSE and renders a structured legal report with screenshot thumbnails, severity badges, statute excerpts, and enforcement citations.</li>
+              <li>Full-stack agentic legal audit tool that autonomously navigates signup, cancellation, and cookie-consent flows using Playwright browser automation, capturing screenshots and page text at each step.</li>
+              <li>Classified detected patterns against live FTC and EU statute text using Perplexity sonar-reasoning-pro with real-time fetch_url tool calls; surfaced real enforcement precedents with case names, outcomes, and source links.</li>
+              <li>Streamed live crawler progress via FastAPI SSE to a Next.js frontend rendering structured legal audit reports with severity badges, screenshot thumbnails, and statute excerpts.</li>
             </ul>
           </div>
           <div class="pc-tags">
@@ -319,6 +320,8 @@
             <span>Playwright</span>
             <span>Perplexity AI</span>
             <span>Next.js</span>
+            <span>TypeScript</span>
+            <span>Tailwind CSS</span>
           </div>
         </div>
 
@@ -372,27 +375,6 @@
           </div>
         </div>
 
-        <!-- Rotten to Riches — no public repo -->
-        <div class="project-card" data-index="6">
-          <div class="pc-top">
-            <div class="pc-icons">
-              <svg class="pc-folder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-            </div>
-            <h3 class="pc-title">Rotten to Riches</h3>
-            <p class="pc-date-small">Sep 2025 &ndash; Dec 2025</p>
-            <ul class="pc-bullets">
-              <li>End-to-end pipeline using NLTK to preprocess scraped Rotten Tomatoes reviews; applied Random Forest, Gradient Boosting, and a PyTorch LSTM with GloVe embeddings on TF-IDF/CountVectorizer representations.</li>
-              <li>Integrated the Kalshi API to deploy model outputs into a sentiment-driven betting strategy automating contract selection and simulating real-money trade execution; 30% performance improvement via hyperparameter tuning.</li>
-            </ul>
-          </div>
-          <div class="pc-tags">
-            <span>PyTorch</span>
-            <span>XGBoost</span>
-            <span>NLTK</span>
-            <span>Scikit-Learn</span>
-            <span>Kalshi API</span>
-          </div>
-        </div>
 
       </div>
     </div>
