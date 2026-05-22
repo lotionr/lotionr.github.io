@@ -584,6 +584,11 @@ section {
   color: var(--gold);
   border: 1px solid var(--gold-muted);
 }
+.tc-badge.current {
+  background: rgba(63, 185, 80, 0.12);
+  color: #3fb950;
+  border: 1px solid rgba(63, 185, 80, 0.3);
+}
 
 .tc-tags {
   display: flex;
