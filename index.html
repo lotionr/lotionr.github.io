@@ -124,7 +124,7 @@
               <span class="stat-label">Double Major</span>
             </div>
             <div class="card-stat">
-              <span class="stat-num">3.9</span>
+              <span class="stat-num">3.75</span>
               <span class="stat-label">GPA</span>
             </div>
           </div>
@@ -147,15 +147,15 @@
                 <h3 class="tc-role">Software Development Engineer Intern</h3>
                 <p class="tc-company">Amazon &mdash; Alexa Team</p>
               </div>
-              <span class="tc-badge current">Current</span>
             </div>
             <p class="tc-date">May 2026 &ndash; Aug 2026</p>
             <p class="tc-desc">
-              Working on wakeword verification for Alexa devices on the Alexa team.
+              Built modular C++ engines for real-time inference (wakeword verification) on the Alexa team &mdash; 64% latency reduction over the legacy system.
             </p>
             <div class="tc-tags">
+              <span>C++</span>
+              <span>Real-Time Inference</span>
               <span>Alexa</span>
-              <span>Wakeword Detection</span>
               <span>AWS</span>
             </div>
           </div>
@@ -221,8 +221,34 @@
       <h2 class="section-title"><span class="section-num">03.</span> Projects</h2>
       <div class="projects-grid">
 
+        <!-- nanoserve — pinned repo -->
+        <div class="project-card featured" data-index="0">
+          <div class="pc-top">
+            <div class="pc-icons">
+              <svg class="pc-folder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              <a href="https://github.com/lotionr/nanoserve" target="_blank" rel="noopener" aria-label="GitHub" class="pc-link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+            <h3 class="pc-title">nanoserve &mdash; LLM Inference Engine</h3>
+            <p class="pc-date-small">nanoserve</p>
+            <ul class="pc-bullets">
+              <li>Zero-dependency C++ inference engine and serving system for Qwen2.5-0.5B, written from scratch: greedy decoding bit-identical to HuggingFace, paged KV cache (21x lower memory), and an OpenAI-compatible SSE server with continuous batching (2.85x aggregate throughput).</li>
+              <li>CPU decode optimized 14x via NEON SIMD, threading, and allocation-free decode, then 2x further with INT8 quantization (integer-sdot GEMV kernels, verified against fp32 goldens) — within 8% of llama.cpp on a reproducible benchmark harness.</li>
+              <li>Metal GPU backend with zero-copy unified-memory weight residency; documents an honest negative result — dispatch latency dominates GEMV at 0.5B scale, so CPU stays the default.</li>
+            </ul>
+          </div>
+          <div class="pc-tags">
+            <span>C++20</span>
+            <span>NEON SIMD</span>
+            <span>Metal</span>
+            <span>INT8 Quantization</span>
+            <span>pybind11</span>
+          </div>
+        </div>
+
         <!-- IntentGate — no public repo -->
-        <div class="project-card" data-index="0">
+        <div class="project-card" data-index="1">
           <div class="pc-top">
             <div class="pc-icons">
               <svg class="pc-folder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
@@ -245,7 +271,7 @@
         </div>
 
         <!-- aibranding — pinned repo -->
-        <div class="project-card featured" data-index="1">
+        <div class="project-card featured" data-index="2">
           <div class="pc-top">
             <div class="pc-icons">
               <svg class="pc-folder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
@@ -271,7 +297,7 @@
         </div>
 
         <!-- DistillAnomaly — pinned repo -->
-        <div class="project-card featured" data-index="2">
+        <div class="project-card featured" data-index="3">
           <div class="pc-top">
             <div class="pc-icons">
               <svg class="pc-folder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
@@ -295,7 +321,7 @@
         </div>
 
         <!-- dark-pattern-auditor — pinned repo -->
-        <div class="project-card" data-index="3">
+        <div class="project-card" data-index="4">
           <div class="pc-top">
             <div class="pc-icons">
               <svg class="pc-folder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
@@ -325,7 +351,7 @@
         </div>
 
         <!-- finder-plus — pinned repo -->
-        <div class="project-card" data-index="4">
+        <div class="project-card" data-index="5">
           <div class="pc-top">
             <div class="pc-icons">
               <svg class="pc-folder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
@@ -349,7 +375,7 @@
         </div>
 
         <!-- Financial Planning AI — no public repo -->
-        <div class="project-card" data-index="5">
+        <div class="project-card" data-index="6">
           <div class="pc-top">
             <div class="pc-icons">
               <svg class="pc-folder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
